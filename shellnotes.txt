@@ -1,0 +1,15 @@
+Remote Shell notes -------------------------------
+
+2 types of ways to get remote shell access
+
+direct remote shell - behaves as a server. it works like a ssh or telnet server. user / attacker connects to a specfici port on the target machine and gets automatically access to a shell.
+
+Reverse Remote shell - application running on target machine connects back a specific server and port on user/attacker machine
+
+Reverse Shell benefits -------
+
+firewalls usually block incoming connections, but the allow outgoing connections in order to provide internet
+the user/attacker does not need to know the IP of the target machine running the shell. the user/attacker machine must be FIXED IP to let shell call home.
+usually there are many outgoing messages on a machine and few or 0 servers running on it. this makes detection a little bit harder, even harder if shells connects on port 80
+
+
